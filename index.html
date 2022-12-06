@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Do Campo Para o Campus</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./catalogo.html">Vendedores</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success bg-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#1c975d"/> <image href="./img/img1.png" a height="100%" width="100%"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Titulo.</h1>
+            <p>Sub-Titulo.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Botão</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#1c975d"/> <image href="./img/img2.png" a height="100%" width="100%"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Titulo.²</h1>
+            <p>Sub-Titulo.²</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Botão²</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#146c43"/> <image href="./img/img3.png" a height="100%" width="100%"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>Titulo.³</h1>
+            <p>Sub-Titulo.³</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Botão³</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> <image href="https://yt3.ggpht.com/jPTB3T04OcHX_JE54RRzGOu6PmZFtlVJZVahcAXKjuYTIYkVkGswTjg3aWdTKuwioLPSK3tWjyk=s900-c-k-c0x00ffffff-no-rj" height="140" width="140"/></svg>
+
+        <h2 class="fw-normal">IFAL</h2>
+        <p>Instituto Federal de Alagoas - Campus Satuba. <br/> Instagram: @ifalsatuba</p>
+        <p><a class="btn btn-secondary" href="https://www2.ifal.edu.br/">Saiba Mais &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> <image href="https://www2.ifal.edu.br/o-ifal/extensao/pp1.jfif/@@images/42e2dbe0-a58d-4ba7-a136-93743903c464.jpeg" height="140" width="140"/></svg>
+
+        <h2 class="fw-normal">PROEX</h2>
+        <p>Pró-Reitoria de Extensão.<br/></p>
+        <p><br/><a class="btn btn-secondary" href="https://www2.ifal.edu.br/o-ifal/extensao">Saiba Mais &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> <image href="data:image/jpeg;base64,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6c406Md+d+mjGPbLy4tQapb1qa7M9J1HvZCBPWrY0mYs1JGY4BJVSSB0yT1xk/PNoRl3LKNLlTck93cqSpUepQt3FkR5o9Nao0nU+kDJYY6eiQeuNU1P6KrsKDLTdGbzitTUKRoK4ZB7AdG2fGXNiMSn2dPd/n4jtri0o/oglq3u+qen7t+dtNir+F0+y8wqikcpRumPoH1l1lc7ddhicTh3DbgrVU06gatRcqcE6ylZKh27iRTYAH7ZdeIxHs67mY8WlHM1Ba/LxOX1fyIJ5PGqtUuajKy0Dp0BlC4IzkAd4A0jPsE5nJNC4HE7hqmsPmr2/oNpI7QdllycHbGkKPVzmWdiDLYwypI5eKkq9XmJW20XkkiH2FO3r1OJWtbSQ1cMVLYLL2VHB2wdmXunlb8Ps6VW54aoFOnWoq2z7szGoj6S2dwFQ/ZJHW4Ha1GLva0Hc7lmpIWJxjckZM+f/HbL/BW/7mn90ZWXc6OqvKzS0v1VtfkQrjlwh4tYU1IKUAi5yDu2rYnuIAX55scGpkccunwNLU2AO2+Fts/WJLf/AByy/wAFb/uaf3T0tOD21FtdK3pU3xjUlNFONtsgZxsPmkVTd7vvculi4ZMsU/05f6s1/wC3zOjERLTQEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREA//9k=" height="140" width="140"/></svg>
+
+        <h2 class="fw-normal">FETAG/AL</h2>
+        <p>Federação dos Trabalhadores na Agricultura do Estado de Alagoas.</p>
+        <p><a class="btn btn-secondary" href="http://fetagal.org.br/">Saiba Mais &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> <image href="./img/logo1.jpg" height="500" width="500"/></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text> <image href="./img/logo2.png" height="500" width="500"/></svg>
+
+      </div>
+    </div>
+
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2022 C+C & C+V, Inc. &middot; <a href="#">Made By</a> &middot; 2022-2023</a></p>
+  </footer>
+</main>
+
+
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
